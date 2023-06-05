@@ -1,7 +1,7 @@
 class DonationCommentsController < ApplicationController
   
   def index 
-    @donation_comment = DonationComment.all 
+    @donation_comments = DonationComment.all 
     render :index 
   end 
 

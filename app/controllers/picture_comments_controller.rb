@@ -1,12 +1,12 @@
 class PictureCommentsController < ApplicationController
 
   def index 
-    @picture_comment = PictureComment.all 
+    @picture_comments = PictureComment.all 
     render :index 
   end 
 
   def create
-    @picture_comments = PictureComment.create(
+    @picture_comment = PictureComment.create(
     body: params[:body]
     )
     render :show
