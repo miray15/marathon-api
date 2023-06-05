@@ -1,0 +1,2 @@
+class DonationComment < ApplicationRecord
+end
