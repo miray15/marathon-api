@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   resources :donation_comments
 
+  resources :picture_comments
+  
 end
