@@ -8,3 +8,6 @@
 # donation_comment = DonationComment.create(body:"Super proud of you"), 
 # donation_comment = DonationComment.create(body:"Nice work!!!! :)")
 
+# picture_comment = PictureComment.create(body:"Great form!"),
+# picture_comment = PictureComment.create(body:"How was the race?"),
+# picture_comment = PictureComment.create(body:"So many people there!")
