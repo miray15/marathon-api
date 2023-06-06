@@ -7,7 +7,9 @@ class DonationCommentsController < ApplicationController
 
   def create
     @donation_comment = DonationComment.create!(
-      body: params[:body]
+      body: params[:body],
+      user_id: params[:user_id]
+      
     )
     render :show
   end

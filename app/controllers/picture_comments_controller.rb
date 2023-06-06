@@ -7,7 +7,8 @@ class PictureCommentsController < ApplicationController
 
   def create
     @picture_comment = PictureComment.create(
-    body: params[:body]
+    body: params[:body],
+    user_id: params[:user_id]
     )
     render :show
   end  
