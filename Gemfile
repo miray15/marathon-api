@@ -76,3 +76,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 
 gem "rack-cors"
+
+
+gem "dockerfile-rails", ">= 1.4", :group => :development
