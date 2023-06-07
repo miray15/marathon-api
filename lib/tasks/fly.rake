@@ -4,13 +4,13 @@
     #  - changes to the filesystem made here DO get deployed
     #  - NO access to secrets, volumes, databases
     #  - Failures here prevent deployment
-+   task :build
+   task :build
 
-    # RELEASE step:
+        # RELEASE step:
     #  - changes to the filesystem made here are DISCARDED
     #  - full access to secrets, databases
     #  - failures here prevent deployment
-+   task :release => ["db:migrate", "db:seed"]
+   task :release => ["db:migrate"]
 
     # SERVER step:
     #  - changes to the filesystem made here are deployed
