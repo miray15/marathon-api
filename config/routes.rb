@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+ 
+  resources :users 
   get "/users" => "users#index" 
   post "/users" => "users#create"
   delete "/users" => "users#destroy"
