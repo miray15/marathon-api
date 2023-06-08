@@ -17,7 +17,7 @@ class DonationCommentsController < ApplicationController
   def destroy
     @donation_comment = DonationComment.find_by(id: params[:id])
     @donation_comment.destroy
-    render json: { message: "donation comment deleted successfully" }
+    render json: { message: "Your comment for the donation page is deleted" }
   end
 
 
