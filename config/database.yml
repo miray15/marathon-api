@@ -84,3 +84,8 @@ production:
   database: marathon_api_production
   username: marathon_api
   password: <%= ENV["MARATHON_API_DATABASE_PASSWORD"] %>
+
+# config/database.yml
+production:
+  <<: *default
+  database: db/production.sqlite3
