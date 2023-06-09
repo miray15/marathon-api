@@ -1,7 +1,7 @@
 class UserMailer < ApplicationMailer
 
   class UserMailer < ActionMailer::Base
-    default :from => "notifications@example.com"
+    default :from => "mimikarabulut@gmail.com"
    
     def welcome_email(user)
       @user = user
