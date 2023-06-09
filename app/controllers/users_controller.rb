@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
 
 
-  def index 
-    @users = User.all 
-    render :index 
-  end 
+  def index
+    @users = User.all
+    render :index
+  end
 
-  
+
   def create
     user = User.new(
       name: params[:name],
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
     )
     if user.save
-      render json: { message: "User created successfully" }, status: :created
+      render json: { message: "New user created" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find_by(id: params[:id])
     @user.destroy
-    render json: { message: "User has been deleted successfully" }
+    render json: { message: "User has been deleted" }
   end
 
 end

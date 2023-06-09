@@ -79,3 +79,8 @@ gem "rack-cors"
 
 
 gem "dockerfile-rails", ">= 1.4", :group => :development
+
+gem "sinatra"
+gem "excon"
+
+gem 'sendgrid-ruby'

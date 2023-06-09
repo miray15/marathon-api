@@ -9,7 +9,6 @@ class DonationCommentsController < ApplicationController
     @donation_comment = DonationComment.create(
       body: params[:body],
       user_id: params[:user_id]
-      
     )
     render :show
   end
@@ -17,7 +16,7 @@ class DonationCommentsController < ApplicationController
   def destroy
     @donation_comment = DonationComment.find_by(id: params[:id])
     @donation_comment.destroy
-    render json: { message: "Your comment for the donation page is deleted" }
+    render json: { message: "Your comment on the donation page is deleted" }
   end
 
 
