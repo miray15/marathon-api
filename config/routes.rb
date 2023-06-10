@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   delete "/users" => "users#destroy"
 
-  get "/users" => "users#welcome_email"
+ 
 
 
   post "/sessions" => "sessions#create"
@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :picture_comments
   delete "/picture_comments" => "picture_comments#destroy"
   
+  root "pages#home"
 
 
 end

@@ -1,13 +1,9 @@
 class UserMailer < ApplicationMailer
+  default from: 'mimikarabulut@gmail.com'
 
-  class UserMailer < ActionMailer::Base
-    default :from => "mimikarabulut@gmail.com"
-   
-    def welcome_email(user)
-      @user = user
-      @url  = "https://mimismarathonjourney.netlify.app/subscribe"
-      mail(:to => user.email, :subject => "TEST")
-    end
+  def welcome_email
+    @user = params[:user]
+    @url  = 'https://mimismarathonjourney.netlify.app'
+    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
   end
-
 end
