@@ -14,9 +14,9 @@ class PictureCommentsController < ApplicationController
   end  
 
   def destroy
-    @picture_comment = PictureComment.find_by(id: params[:id])!
+    @pciture_comment = PictureComment.find_by(id: params[:id])
     @picture_comment.destroy
-    render json: { message: "Your comment for this picture has been deleted" }
+    render json: { message: "Comment for picture destroyed successfully" }
   end
 
 
