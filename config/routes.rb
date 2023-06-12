@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   delete "/donation_comments" => "donation_comments#destroy"
 
   resources :picture_comments
-  delete "/picture_comments" => "picture_comments#destroy"
+
+  # delete "/picture_comments" => "picture_comments#destroy"
   
   root "pages#home"
 
