@@ -18,5 +18,4 @@ class DonationCommentsController < ApplicationController
     render json: { message: "Your comment on the donation page is deleted" }
   end
 
-
 end
